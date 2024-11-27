@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/gradient_0"
+    tools:context=".Schedule_SMS_details">
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/btn_back" />
+
+    <TextView
+        android:id="@+id/Patient_Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/button_home"
+        android:layout_toRightOf="@id/button_back"
+        android:fontFamily="@font/font_01"
+        android:gravity="center"
+        android:text="Patient Details"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <ImageButton
+        android:id="@+id/button_home"
+        android:layout_margin="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:foregroundGravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/btn_home" />
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/button_home"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="20dp">
+    <TextView
+        android:id="@+id/text_view_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        
+        android:fontFamily="@font/font_01"
+        android:layout_marginTop="16dp"
+        tools:text="Name"/>
+    <TextView
+        android:id="@+id/text_view_OPDNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        
+        android:fontFamily="@font/font_01"
+        android:layout_marginTop="20dp"
+        tools:text="OPD number"/>
+    <TextView
+        android:id="@+id/text_view_ContactNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        
+        android:fontFamily="@font/font_01"
+        android:layout_marginTop="20dp"
+        tools:text="Contact_No"/>
+
+
+        <TextView
+            android:id="@+id/schedule_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            
+            android:fontFamily="@font/font_01"
+            android:layout_marginTop="20dp"
+            tools:text="schedule_date"/>
+        <TextView
+            android:id="@+id/schedule_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            
+            android:fontFamily="@font/font_01"
+            android:layout_marginTop="20dp"
+            tools:text="schedule_time"/>
+        <TextView
+            android:id="@+id/text_view_IPD_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+
+            android:fontFamily="@font/font_01"
+            android:layout_marginTop="20dp"
+            tools:text="IDP number"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/main_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:layout_below="@id/main_content">
+        <Button
+            android:id="@+id/send_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_btn"
+            android:elevation="6dp"
+            android:fontFamily="@font/font_01"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:text="Send SMS"
+            />
+        <Button
+            android:id="@+id/delete_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_btn"
+            android:layout_marginLeft="20dp"
+            android:elevation="6dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/font_01"
+            android:textColor="@color/black"
+            android:text="Delete Schedule"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
